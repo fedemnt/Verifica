@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button x:Name="btnCreaLibri" Content="Crea Libro" HorizontalAlignment="Left" Margin="181,63,0,0" VerticalAlignment="Top" Click="btnCreaLibri_Click"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="119,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Margin="116,179,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.623"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtAnnoPub" HorizontalAlignment="Left" Margin="126,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Margin="132,245,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.46,3.478"/>
+        <TextBox x:Name="txtNumeroPagine" HorizontalAlignment="Left" Margin="132,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="creaBiblioteca" Content="Crea Biblioteca" HorizontalAlignment="Left" Margin="571,73,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNomeBiblioteca" HorizontalAlignment="Left" Margin="521,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtIndirizzo" HorizontalAlignment="Left" Margin="518,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.623"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtOrarioApertura" HorizontalAlignment="Left" Margin="528,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="txtOrarioChiusura" HorizontalAlignment="Left" Margin="534,236,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.46,3.478"/>
     </Grid>
 </Window>

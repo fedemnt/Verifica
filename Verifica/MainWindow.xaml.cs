@@ -24,5 +24,19 @@ namespace Verifica
         {
             InitializeComponent();
         }
+
+        private void btnCreaLibri_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime annoPub = DateTime.Parse(txtAnnoPub.Text);
+            int numPag = int.Parse(txtNumeroPagine.Text);
+            Libro l = new Libro(txtNome.Text, txtTitolo.Text, annoPub, txtEditore.Text, numPag);
+        }
+
+        private void creaBiblioteca_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime orarioApertura = DateTime.Parse(txtOrarioApertura.Text);
+            DateTime orarioChiusura = DateTime.Parse(txtOrarioChiusura.Text);
+            Biblioteca b = new Biblioteca(txtNomeBiblioteca.Text, txtIndirizzo.Text, orarioApertura, orarioChiusura);
+        }
     }
 }
