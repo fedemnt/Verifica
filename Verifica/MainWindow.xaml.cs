@@ -25,6 +25,7 @@ namespace Verifica
             InitializeComponent();
         }
 
+
         private void btnCreaLibri_Click(object sender, RoutedEventArgs e)
         {
             DateTime annoPub = DateTime.Parse(txtAnnoPub.Text);
