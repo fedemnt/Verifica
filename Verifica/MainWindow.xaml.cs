@@ -38,5 +38,6 @@ namespace Verifica
             DateTime orarioChiusura = DateTime.Parse(txtOrarioChiusura.Text);
             Biblioteca b = new Biblioteca(txtNomeBiblioteca.Text, txtIndirizzo.Text, orarioApertura, orarioChiusura);
         }
+        //Federico Monti Classe 4G Verifica 12/11/2022
     }
 }
